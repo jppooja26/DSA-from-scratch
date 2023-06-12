@@ -6,7 +6,7 @@ class Operation {
     public void create() {
         System.out.print("Enter length of the array: ");
         n = sc.nextInt();
-        arr = new int[n]; //creation
+        arr = new int[n]; //memory allocation for array of length n
         System.out.println("Array created");
     }
 
@@ -28,14 +28,14 @@ class Operation {
 
     public void delete() {
         System.out.print("Enter index to be deleted: ");
-        int pos = sc.nextInt(); // 1 2 3 4 5
-        if(pos == n-1)
+        int pos = sc.nextInt(); 
+        if(pos == n-1) //replacing null if it is the final element
             arr[n-1] = 0;
-        else{
+        else{ 
             for(int i=pos;i<n-1;i++) {
-                arr[i] = arr[i+1];
+                arr[i] = arr[i+1]; //moving successive elements to their index before
             }
-            arr[n-1] = 0;
+            arr[n-1] = 0; 
         }
         System.out.println("Deletion completed");
     }
