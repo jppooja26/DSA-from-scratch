@@ -1,16 +1,17 @@
+//Space complexity - O(n)
 import java.util.Scanner;
 class Operation {
     Scanner sc = new Scanner(System.in);
     int n;
     int[] arr;
-    public void create() {
+    public void create() { //Time complexity - O(1)
         System.out.print("Enter length of the array: ");
         n = sc.nextInt();
         arr = new int[n]; //memory allocation for array of length n
         System.out.println("Array created");
     }
 
-    public void insert() {
+    public void insert() { //Time complexity - O(n)
         System.out.print("Enter elements: ");
         for(int i=0;i<n;i++) {
             arr[i] = sc.nextInt();
@@ -18,7 +19,7 @@ class Operation {
         System.out.println("Insertion completed");
     }
 
-    public void update() {
+    public void update() { //Time complexity - O(1)
         System.out.print("Enter index to be updated: ");
         int pos = sc.nextInt();
         System.out.print("Enter value: ");
@@ -26,7 +27,7 @@ class Operation {
         System.out.println("Updation completed");
     }
 
-    public void delete() {
+    public void delete() { //Time complexity - O(n)
         System.out.print("Enter index to be deleted: ");
         int pos = sc.nextInt(); 
         if(pos == n-1) //replacing null if it is the final element
@@ -40,7 +41,7 @@ class Operation {
         System.out.println("Deletion completed");
     }
 
-    public void display() {
+    public void display() { //Time complexity - O(n)
         System.out.print("Array elements: ");
         for(int i=0;i<n;i++) {
             System.out.print(arr[i]+" ");
