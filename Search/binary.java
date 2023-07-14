@@ -36,3 +36,5 @@ public class binary {
             System.out.println("Value not found!");
     }
 }
+/* Moreover, binary search can also be applied for other data structures like LinkedList, trees etc
+*/
