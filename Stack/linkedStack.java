@@ -1,3 +1,4 @@
+//Stack implementation using LinkedList
 package Stack;
 import java.util.Scanner;
 class Node {
