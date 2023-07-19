@@ -1,4 +1,6 @@
 //Stack implementation using LinkedList
+//Time complexity - O(1)
+//Space complexity - O(n)
 package Stack;
 import java.util.Scanner;
 class Node {

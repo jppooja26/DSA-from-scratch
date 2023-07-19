@@ -1,3 +1,6 @@
+//Stack implementation using Collections package
+//Time complexity - O(1)
+//Space compliexity - O(n)
 package Stack;
 import java.util.Scanner;
 import java.util.Stack;
