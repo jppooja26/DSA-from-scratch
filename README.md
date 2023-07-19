@@ -9,5 +9,6 @@ The repository includes implementations of the following data structures:
 2. Matrix
 3. String
 4. LinkedList
+5. Stack
 
 I will keep updating this repository. Feel free to explore the code and learn more about CRUD operations on different data structures! If you have any questions or need further assistance, don't hesitate to reach out at jppooja03@yahoo.com
