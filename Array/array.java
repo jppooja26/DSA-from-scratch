@@ -1,86 +1,78 @@
-//Space complexity - O(n)
+package Array;
 import java.util.Scanner;
-class Operation {
-    Scanner sc = new Scanner(System.in);
-    int n;
-    int[] arr;
-    public void create() { //Time complexity - O(1)
-        System.out.print("Enter length of the array: ");
+public class array {
+    static int[] arr; 
+    static int n;
+    static Scanner sc = new Scanner(System.in);
+    public static void create() {
+        System.out.print("Enter array length: ");
         n = sc.nextInt();
-        arr = new int[n]; //creation
+        arr = new int[n];
         System.out.println("Array created");
     }
-
-    public void insert() { //Time complexity - O(n)
-        System.out.print("Enter elements: ");
+    public static void read() {
+        System.out.print("Enter array elements: ");
         for(int i=0;i<n;i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println("Insertion completed");
     }
-
-    public void update() { //Time complexity - O(1)
-        System.out.print("Enter index to be updated: ");
-        int pos = sc.nextInt();
+    public static void update() {
+        System.out.print("Enter index of the element to be updated: ");
+        int ind = sc.nextInt();
         System.out.print("Enter value: ");
-        arr[pos] = sc.nextInt();
+        arr[ind] = sc.nextInt();
         System.out.println("Updation completed");
     }
-
-    public void delete() { //Time complexity - O(n)
-        System.out.print("Enter index to be deleted: ");
-        int pos = sc.nextInt(); // 1 2 3 4 5
-        if(pos == n-1)
+    public static void delete() {
+        System.out.print("Enter index of the element to be deleted: ");
+        int ind = sc.nextInt();
+        if(ind == n-1) 
             arr[n-1] = 0;
-        else{
-            for(int i=pos;i<n-1;i++) {
+        else {
+            for(int i=ind;i<n-1;i++) {
                 arr[i] = arr[i+1];
             }
             arr[n-1] = 0;
         }
         System.out.println("Deletion completed");
     }
-
-    public void display() { //Time complexity - O(n)
+    public static void display() {
         System.out.print("Array elements: ");
         for(int i=0;i<n;i++) {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
     }
-}
-public class array {
     public static void main(String[] args) {
-        Operation obj = new Operation();
-        Scanner sc = new Scanner(System.in);
+        int ch;
         do {
-            System.out.println("\n***MENU***");
-            System.out.println("1. Create\n2. Insert\n3. Update\n4. Delete\n5. Display\n6. Exit");
+            System.out.println("***MENU****");
+            System.out.println("1. Create\n2. Read\n3. Update\n4. Delete\n5. Display\n6. Exit");
             System.out.print("Enter your choice: ");
-            int ch = sc.nextInt();
-            switch(ch) 
-            {
+            ch = sc.nextInt();
+            switch (ch) {
                 case 1:
-                    obj.create();
+                    create();
                     break;
                 case 2:
-                    obj.insert();
+                    read();
                     break;
                 case 3:
-                    obj.update();
+                    update();
                     break;
-                case 4:
-                    obj.delete();
+                case 4: 
+                    delete();
                     break;
                 case 5:
-                    obj.display();
+                    display();
                     break;
-                case 6:
+                case 6: 
                     System.exit(0);
                 default:
                     System.out.println("Invalid choice!");
                     break;
             }
-        }while(true);
+        } while(ch!=-1);
     }
 }

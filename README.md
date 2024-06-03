@@ -1,16 +1,17 @@
-# DSA-from-scratch
+# DSA-from-scratch 
 
-This repository contains code that demonstrates CRUD (Create, Read, Update, Delete) operations on various data structures. The code is organized in a menu-driven format, allowing users to interactively perform operations on the chosen data structure.
+Welcome to the DSA-from-scratch repository! This repository contains comprehensive notes and code that demonstrate CRUD (Create, Read, Update, Delete) operations on various data structures. The notes on different data structures provides a detailed description on their syntax, working, memory allocation, advantages and disadvantages. The code is organized in a menu-driven format, allowing users to interactively perform operations on the chosen data structure.
 
 # Data Structures Covered 
-The repository includes implementations of the following data structures:
+The repository includes implementations and notes of the following data structures:
 
-1. Array
-2. Matrix
-3. String
-4. LinkedList
-5. Search
-6. Stack
-7. Queue
+    1. Array
 
-I will keep updating this repository. Feel free to explore the code and learn more about CRUD operations on different data structures! If you have any questions or need further assistance, don't hesitate to reach out at jppooja03@yahoo.com
+
+<br>
+
+# Future Updates
+This repository will be continually updated with more data structures, each with detailed notes on their syntax, working, memory allocation, advantages, disadvantages, and CRUD operations. Stay tuned for more updates!
+Feel free to explore the code and learn more about CRUD operations on different data structures! If you have any questions or need further assistance, don't hesitate to reach out at jppooja03@yahoo.com
+
+Happy Coding!
