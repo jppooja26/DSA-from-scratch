@@ -8,7 +8,7 @@ The repository includes implementations and notes of the following data structur
     1. Array
 
 
-<br>
+
 
 # Future Updates
 This repository will be continually updated with more data structures, each with detailed notes on their syntax, working, memory allocation, advantages, disadvantages, and CRUD operations. Stay tuned for more updates!

@@ -1,6 +1,6 @@
 # Array
 
-- A data structure that holds the collection of same datatypes stired in contiguous memory locations.
+- A data structure that holds the collection of same datatypes stored in contiguous memory locations.
 - The declaration and definition of an array of size 10 is as follows: 
 
 <pre>
@@ -27,8 +27,10 @@
 
 - Java supports dynamic array named ArrayList which is resizable, with the help of util package.
 - Operations: 
+<pre>
     Adding elements to ArrayList -> arr.add(1)
     Removing elements from ArrayList -> arr.remove(0)
+</pre>
 
 # Memory Allocation
 
