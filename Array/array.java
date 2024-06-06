@@ -1,30 +1,32 @@
+//Time complexity - O(n)
+//Space complexity - O(n)
 package Array;
 import java.util.Scanner;
 public class array {
     static int[] arr; 
     static int n;
     static Scanner sc = new Scanner(System.in);
-    public static void create() {
+    public static void create() { //Time complexity - O(n)
         System.out.print("Enter array length: ");
         n = sc.nextInt();
         arr = new int[n];
-        System.out.println("Array created");
+        System.out.println("Array created!");
     }
-    public static void read() {
+    public static void read() { //Time complexity - O(n)
         System.out.print("Enter array elements: ");
         for(int i=0;i<n;i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Insertion completed");
+        System.out.println("Insertion completed!");
     }
-    public static void update() {
+    public static void update() { //Time complexity - O(1)
         System.out.print("Enter index of the element to be updated: ");
         int ind = sc.nextInt();
         System.out.print("Enter value: ");
         arr[ind] = sc.nextInt();
-        System.out.println("Updation completed");
+        System.out.println("Updation completed!");
     }
-    public static void delete() {
+    public static void delete() { //Time complexity - O(n)
         System.out.print("Enter index of the element to be deleted: ");
         int ind = sc.nextInt();
         if(ind == n-1) 
@@ -35,9 +37,9 @@ public class array {
             }
             arr[n-1] = 0;
         }
-        System.out.println("Deletion completed");
+        System.out.println("Deletion completed!");
     }
-    public static void display() {
+    public static void display() { //Time complexity - O(n)
         System.out.print("Array elements: ");
         for(int i=0;i<n;i++) {
             System.out.print(arr[i]+" ");

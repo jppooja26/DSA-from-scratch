@@ -42,7 +42,7 @@
 **Time complexity**
 - Accessing elements: O(1), <em>accessing with element's index.</em>
 - Searching element: O(n), <em>traverse through the whole array.</em>
-- Insertion/Deletion at the end: O(1), <em>adding or removing elements at the end done at constant time.</em>
+- Insertion/Deletion at the end: O(1), <em>adding or removing elements at the end is done at constant time.</em>
 - Insertion/Deletion at arbitrary positions: O(n), <em>traverse through the entire array.</em>
 
 **Space complexity**
