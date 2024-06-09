@@ -6,8 +6,7 @@ Welcome to the DSA-from-scratch repository! This repository contains comprehensi
 The repository includes implementations and notes of the following data structures:
 
     1. Array
-
-
+    2. Linked List
 
 
 # Future Updates
